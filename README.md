@@ -13,9 +13,10 @@
   - [x] 요구사항
   - [x] 요구사항 총족을 위한 기술적 내용
   - [x] 요구사항 총족을 위한 물리적 내용
-- [ ] 2. 물고기 자동 관리 장치 설계
-  - [ ] 개발 환경 설계
+- [x] 2. 물고기 자동 관리 장치 설계
+  - [x] 개발 환경 설계
   - [ ] 개발 구조 설계
+  - [x] 개발 관리 설계
   - [ ] 개발 일정 설계
 - [ ] 3. 물고기 자동 관리 장치 기본 구축
 - [ ] 4. 물고기 자동 관리 장치 개발
@@ -84,7 +85,7 @@
 
 ### 1차 물리적 내용
 
-- RaspberryPi 보드
+- RaspberryPi 4 model B 보드
 - 외부 UI 사이트 운영, DB 서버를 위한 보조장비 (win or linux)
 - 카매라
 - 먹이 배급 부품
@@ -103,13 +104,14 @@
 
 ### 개발 보드
 - 사용 언어
-  - python
+  - python 3
 
 ### DB
 - PostgreSQL
 
 ### 개발 서버
 - React?
+- Grafana (검토)
 
 ### Test
 - xUnit
@@ -119,10 +121,43 @@
 
 ## 2-2 개발 구조 설계
 
+- 장비
+  - 물고기 자동 관리 부문
+  - 장비 자체 관리 부문
+  - 서버 전송 부문
+- 서버
+  - 수집
+  - 가공
+- 클라이언트 (웹)
+
 <br><br>
 
+## 2-3 개발 관리 설계
 
-## 2-3 개발 일정 설계
+### 관리 툴
+
+- Git
+- Git Hub
+- Git Fork
+
+### Git repository 구성
+- / : README.md을 배치
+- /Doc : [문서].md를 배치
+- /Code : 코드를 배치
+- /Presentation : PPT 등을 배치
+
+### Git Branch 구성
+
+- main : Release 배포, README.md 문서 (public)
+- Develop : 개발 통합 (private)
+- Feature(n) : 기능 구현 (private)
+- Release : 배포용, 모든 개발 결과가 이곳에 저장 (private)
+- Test : Test 공간 (private)
+
+<br><br>
+
+## 2-4 개발 일정 설계
+
 
 
 <br><br><br>
